@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse Movies</title>
+    <script src="movies.js" defer></script>
+    <link rel="stylesheet" href="movies.css" />
+    <script src="https://kit.fontawesome.com/c2af4352a7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header__movies">
+        <div class="logo">
+            <i class="fa-solid fa-film" aria-hidden="true"></i>
+            <h1>Movie World</h1>
+        </div>
+
+        <h2 class="header__browse">Browse Movies</h2>
+        <p class="header__para">Here you can browse and search for movies.</p>
+    </div>
+
+    <div class="search-bar-movies" role="search">
+        <label for="searchInput" class="sr-only"></label>
+        <input type="text" id="searchInput" placeholder="Search for a movie..." />
+        <button type="button" id="searchButton" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <div class="movies__container">
+        <div class="movie">
+            <figure>
+                <img class="movie__poster" src="./assets/movie example.jpg" alt="Poster for Movie Title" />
+            </figure>
+            <div class="movie__details">
+                <h3 class="movie__title">Movie Title</h3>
+                <p class="movie__para">Movie description goes here.</p>
+                <p class="movie__rating">Rating: 8.5/10</p>
+                <p class="movie__genre">Genre: Action, Adventure</p>
+                <p class="movie__runtime">Runtime: 120 minutes</p>
+            </div>
+        </div>
+
+</body>
+
+</html>
