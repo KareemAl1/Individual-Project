@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap");
 
 /* Base Styles */
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   background-color: rgb(255, 255, 255);
   color: #11274b;
 }
@@ -27,8 +27,8 @@ nav {
 }
 
 .logo h1 {
-  font-size: 32px;     
-  font-weight: 900;      
+  font-size: 32px;
+  font-weight: 900;
 }
 
 .fa-film {
@@ -45,9 +45,9 @@ nav {
 .navigation-links a {
   position: relative;
   text-decoration: none;
-  font-size: 24px;       
+  font-size: 24px;
   color: #1e293b;
-  font-weight: 700;       
+  font-weight: 700;
   transition: color 0.3s ease;
 }
 
@@ -72,27 +72,26 @@ nav {
 }
 
 .btn_contact {
-    cursor: pointer;
-    padding: 12px 40px;
-    align-items: center;
-    border-radius: 50px;
-    background-color: #173169;
-    color: #fff !important;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: all 300ms ease-in-out; 
+  cursor: pointer;
+  padding: 12px 40px;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #173169;
+  color: #fff !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 300ms ease-in-out;
 }
 
 .btn_contact:hover {
-    background-color: #122652;
-    transition: all 300ms ease-in-out;
+  background-color: #122652;
+  transition: all 300ms ease-in-out;
 }
 
 .btn_contact::after {
-    display: none;
+  display: none;
 }
-
 
 /* Hero Section */
 .hero {
@@ -109,7 +108,7 @@ nav {
 }
 
 .hero-content h2 {
-  font-size: 64px;         
+  font-size: 64px;
   font-weight: 900;
   line-height: 1.15;
   color: #173169;
@@ -135,13 +134,12 @@ nav {
 .search-bar input {
   border-radius: 20px;
   border: 4px solid #ccc;
-    padding: 15px 20px;
-    font-size: 1.2rem;
-    flex: 1;
-    outline: none;
-    transition: border-color 0.3s ease;
-    margin-right: 12px;
-
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  flex: 1;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-right: 12px;
 }
 
 .search-bar input:focus {
@@ -152,11 +150,11 @@ nav {
 .search-bar button {
   background-color: #173169;
   color: white;
-    border: none;
-    padding: 15px 25px;
-    font-size: 24px;
-    border-radius: 20px;
-    cursor: pointer;
+  border: none;
+  padding: 15px 25px;
+  font-size: 24px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .search-bar button:hover {
@@ -166,13 +164,13 @@ nav {
 
 .hero__image-wrapper {
   padding: 50px;
-} 
+}
 
 .hero__img {
   width: 100%;
   max-width: 500px;
   height: auto;
-  color:#173169 ;
+  color: #173169;
 }
 
 /* Responsive */

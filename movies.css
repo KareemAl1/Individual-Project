@@ -104,7 +104,6 @@ MOVIES
 
 */
 
-
 .movies__container {
   display: flex;
   justify-content: center;
@@ -126,14 +125,13 @@ MOVIES
   transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
-
 .movie__details {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  opacity: 0; 
+  opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -150,16 +148,13 @@ MOVIES
   margin-bottom: 6px;
 }
 
-
 .movie:hover {
   transform: scale(1.05);
 }
 
-
 .movie:hover .movie__poster {
-  filter: brightness(40%); 
+  filter: brightness(40%);
 }
-
 
 .movie:hover .movie__details {
   opacity: 1;
