@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Movie World</title>
+
   <script src="index.js" defer></script>
   <link rel="stylesheet" href="index.css" />
   <script src="https://kit.fontawesome.com/c2af4352a7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
   <!-- NAV -->
   <nav>
     <div class="logo">
@@ -21,27 +21,31 @@
 
     <ul class="navigation-links">
       <li><a href="#" class="active">Home</a></li>
-      <li><a href="movies.html" class="active">Find Movies</a></li>
+      <li><a href="movies.html">Find Movies</a></li>
       <li><a href="#" class="btn_contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- HERO -->
-  <section class="hero">
+  <main class="hero">
     <div class="hero-content">
       <h2>Discover your next favorite movie</h2>
-      <p>Search by title, actor, or keyword to explore ratings, trailers, and more.</p>
+      <p>Search by title to explore ratings, posters, and more.</p>
+
       <div class="search-bar">
-        <input type="text" placeholder="Search for a movie..." />
-        <button type="button" aria-label="Search">
-          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        <input type="text" id="homeSearchInput" placeholder="Search for a movie..." autocomplete="off" />
+        <button type="button" id="homeSearchButton" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
+
+
       <figure class="hero__image-wrapper">
-        <img class="hero__img" src="./assets/undraw_home-cinema_jdm1.svg">
+        <img class="hero__img" src="./assets/undraw_home-cinema_jdm1.svg"
+          alt="Person sitting in a home cinema watching a movie" />
       </figure>
     </div>
-  </section>
+  </main>
 </body>
 
 </html>

@@ -2,47 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Browse Movies</title>
-    <script src="movies.js" defer></script>
-    <link rel="stylesheet" href="movies.css" />
-    <script src="https://kit.fontawesome.com/c2af4352a7.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browse Movies | Movie World</title>
+
+  <script src="movies.js" defer></script>
+  <link rel="stylesheet" href="movies.css" />
+  <script src="https://kit.fontawesome.com/c2af4352a7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="header__movies">
-        <div class="logo">
-            <i class="fa-solid fa-film" aria-hidden="true"></i>
-            <h1>Movie World</h1>
-        </div>
 
-        <h2 class="header__browse">Browse Movies</h2>
-        <p class="header__para">Here you can browse and search for movies.</p>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">
+      <i class="fa-solid fa-film"></i>
+      <h1>Movie World</h1>
     </div>
 
-    <div class="search-bar-movies" role="search">
-        <label for="searchInput" class="sr-only"></label>
-        <input type="text" id="searchInput" placeholder="Search for a movie..." />
-        <button type="button" id="searchButton" aria-label="Search">
-            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-        </button>
-    </div>
+    <ul class="navigation-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="#">Find Movies</a></li>
+      <li><a href="#" class="btn_contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div class="movies__container">
-        <div class="movie">
-            <figure>
-                <img class="movie__poster" src="./assets/movie example.jpg" alt="Poster for Movie Title" />
-            </figure>
-            <div class="movie__details">
-                <h3 class="movie__title">Movie Title</h3>
-                <p class="movie__para">Movie description goes here.</p>
-                <p class="movie__rating">Rating: 8.5/10</p>
-                <p class="movie__genre">Genre: Action, Adventure</p>
-                <p class="movie__runtime">Runtime: 120 minutes</p>
-            </div>
-        </div>
+
+  <!-- HEADER TEXT -->
+  <header class="header__movies">
+    <h2 class="header__browse">Browse Movies</h2>
+    <p class="header__para">Search by movie title and discover posters, years, and more.</p>
+  </header>
+
+
+  <!-- SEARCH BAR -->
+  <section class="search-bar-movies">
+    <a href="index.html">
+      <button class="home__btn">
+        <i class="fa-solid fa-house"></i>
+      </button>
+    </a>
+
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Search for a movie..." 
+      autocomplete="off"
+    />
+
+    <button id="searchButton">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+  </section>
+
+
+  <!-- SORTING BUTTONS -->
+  <div class="sort-buttons">
+    <button id="sortLowHigh">Year ↑</button>
+    <button id="sortHighLow">Year ↓</button>
+  </div>
+
+
+  <!-- RESULTS GRID -->
+  <main>
+    <div id="results" class="movies__container"></div>
+  </main>
 
 </body>
-
 </html>
